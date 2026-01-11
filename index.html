@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productize Yourself — PY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #05070d;
+      --glass: rgba(255,255,255,0.08);
+      --border: rgba(255,255,255,0.12);
+      --text: #f5f7fa;
+      --muted: #9aa4b2;
+      --accent: #7dd3fc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, sans-serif;
+      background: radial-gradient(circle at 20% 10%, #10172a, #05070d 60%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 120px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .glass {
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: 0 40px 120px rgba(0,0,0,0.5);
+    }
+
+    .hero {
+      display: grid;
+      gap: 32px;
+    }
+
+    .hero span {
+      color: var(--accent);
+    }
+
+    .cta {
+      margin-top: 24px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #7dd3fc, #60a5fa);
+      color: #05070d;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 40px rgba(96,165,250,0.4);
+    }
+
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 50px rgba(96,165,250,0.6);
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+
+    footer {
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section>
+    <div class="container hero">
+      <div class="glass">
+        <h1>Productize Yourself <span>(PY)</span></h1>
+        <p style="margin-top: 20px; font-size: 1.25rem;">
+          Turn your attention into your greatest asset.<br>
+          PY removes digital noise so you can stay in flow and build what matters.
+        </p>
+
+        <div class="cta">
+          <a href="#">Add to Chrome — It’s Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section>
+    <div class="container">
+      <h2>Why most people struggle to focus</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Infinite feeds</h3>
+          <p>Every scroll triggers novelty, pulling you away from deep work.</p>
+        </div>
+        <div class="card">
+          <h3>Algorithmic distractions</h3>
+          <p>Platforms are engineered to capture attention — not protect it.</p>
+        </div>
+        <div class="card">
+          <h3>Context switching</h3>
+          <p>Every tab switch resets your mental state and breaks flow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section>
+    <div class="container">
+      <h2>What PY does differently</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Quiet Mode</h3>
+          <p>Removes infinite scrolling feeds while keeping useful content accessible.</p>
+        </div>
+        <div class="card">
+          <h3>Flow Protection</h3>
+          <p>Prevents unconscious tab-hopping and impulsive browsing.</p>
+        </div>
+        <div class="card">
+          <h3>Zero tracking</h3>
+          <p>No accounts. No data collection. No surveillance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT FEELS -->
+  <section>
+    <div class="container">
+      <h2>How it feels to use PY</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Calm</h3>
+          <p>Your browser becomes a workspace, not a casino.</p>
+        </div>
+        <div class="card">
+          <h3>Clarity</h3>
+          <p>You see only what you intentionally choose to see.</p>
+        </div>
+        <div class="card">
+          <h3>Momentum</h3>
+          <p>Less friction means more progress on what truly matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="container hero">
+      <div class="glass">
+        <h2>Protect your attention. Productize yourself.</h2>
+        <p style="margin-top: 16px;">
+          PY is not a blocker. It's a filter for a better internet.
+        </p>
+        <div class="cta">
+          <a href="#">Install PY Extension</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Productize Yourself — Designed for calm, built for creators.
+  </footer>
+
+</body>
+</html>
